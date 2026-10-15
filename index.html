@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anvi Classes</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7C5CFC">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Anvi">
+<style>
+html,body{margin:0;height:100%;background:#EEF7FF}
+iframe{position:fixed;inset:0;width:100%;height:100%;border:0}
+</style>
+</head><body>
+<iframe id="f" allow="clipboard-write; clipboard-read" title="Anvi Classes"></iframe>
+<script>
+const APP = 'https://script.google.com/macros/s/AKfycbx9UQJkyrkq48TO6OSBWU6JXt10I9U36JFWwLnhT5Rbu4puLEgu3yE8tXkYgTwPhV5h/exec';
+document.getElementById('f').src = APP + location.search;   // keeps ?m=quick working
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
+</body></html>
